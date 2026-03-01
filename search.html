@@ -9,244 +9,238 @@
 </head>
 
 <body>
-    <div class="main-container">
+    <main>
         <nav>
-            <div class="nav_container">
-                <div class="logo_container">
-                    <a href="index.html"><img src="media/logo.png" alt=""></a>
-                </div>
-                <div class="nav_links">
-                    <a href="" class="nav-link">Поиск</a>
-                    <a href="" class="nav-link">Задать вопрос</a>
-                    <a href="" class="nav-link">Уведомления</a>
-                    <a href="" class="nav-link">Телефон</a>
-                    <a href="" class="nav-link">Мои заказы</a>
-                    <a href="" class="nav-link">Бронирование</a>
-                    <a href="" class="nav-link">Избранное</a>
-                    <a href="account.html" class="nav-link">Кабинет</a>
-                </div>
-                <a href="auth.html" class="btn-reg">Вход / Регистрация</a>
-            </div>
+
+            <a href="index.html"><img src="media/logo.png" alt=""></a>
+
+            <ul class="nav_links">
+                <li><a href="" class="nav-link">Поиск</a></li>
+                <li><a href="" class="nav-link">Задать вопрос</a></li>
+                <li><a href="" class="nav-link">Уведомления</a></li>
+                <li><a href="" class="nav-link">Телефон</a></li>
+                <li><a href="" class="nav-link">Мои заказы</a></li>
+                <li><a href="" class="nav-link">Бронирование</a></li>
+                <a href="" class="nav-link">Избранное</a>
+                <a href="account.html" class="nav-link">Кабинет</a>
+            </ul>
+            <a href="auth.html" class="btn-reg">Вход / Регистрация</a>
         </nav>
 
         <div class="search">
-            <div class="search-content">
-                <h2>Найдём, где остановиться!</h2>
-                <p>Квартиры, отели, гостевые дома — 390 тысяч вариантов для поездок по России и зарубежью</p>
-                <div class="search-filter">
-                    <input type="text" class="input-search-filter city" placeholder="Страна,Город">
-                    <div class="input-group">
-                        <label for="checkin">Дата заезда</label>
-                        <input type="date" id="checkin" class="input-search-filter">
-                    </div>
+            <h2>Найдём, где остановиться!</h2>
+            <p>Квартиры, отели, гостевые дома — 390 тысяч вариантов для поездок по России и зарубежью</p>
+            <div class="search-filter">
+                <input type="text" class="input-search-filter city" placeholder="Страна,Город">
+                <div class="input-group">
+                    <label for="checkin">Дата заезда</label>
+                    <input type="date" id="checkin" class="input-search-filter">
+                </div>
 
-                    <div class="input-group">
-                        <label for="checkout">Дата выезда</label>
-                        <input type="date" id="checkout" class="input-search-filter">
+                <div class="input-group">
+                    <label for="checkout">Дата выезда</label>
+                    <input type="date" id="checkout" class="input-search-filter">
+                </div>
+                <input type="number" max="10" min="1" class="input-search-filter guest" placeholder="Гости">
+                <a href="search.html" class="btn-search-global a">Найти</a>
+            </div>
+        </div>
+
+        <div class="hosts-carts">
+            <div class="bron_cart">
+                <div class="img-container">
+                    <img src="media/8.jpeg" class="img-cart" alt="Отель">
+                </div>
+                <div class="info_bron">
+                    <h5>Отель "Название"</h5>
+                    <p> Франция, Париж</p>
+                    <p>Адрес(ул, дом, Париж)</p>
+                    <p>Удаленность: 10км</p>
+                    <p>4.5</p>
+                    <p>+79027460948</p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Odio est soluta architecto eaque, dolores quod impedit provident saepe placeat.
+                    </p>
+                    <p class="price">За ночь 10500p</p>
+                    <div class="btn_brone">
+                        <a href="" class="detail">Выбрать номер</a>
+
                     </div>
-                    <input type="number" max="10" min="1" class="input-search-filter guest" placeholder="Гости">
-                    <button type="submit" class="btn-search-global filter-btn">Найти</button>
+                </div>
+            </div>
+            <div class="bron_cart">
+                <div class="img-container">
+                    <img src="media/8.jpeg" class="img-cart" alt="Отель">
+                </div>
+                <div class="info_bron">
+                    <h5>Отель "Название"</h5>
+                    <p> Франция, Париж</p>
+                    <p>Адрес(ул, дом, Париж)</p>
+                    <p>Удаленность: 10км</p>
+                    <p>4.5</p>
+                    <p>+79027460948</p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Odio est soluta architecto eaque, dolores quod impedit provident saepe placeat.
+                    </p>
+                    <p class="price">За ночь 10500p</p>
+                    <div class="btn_brone">
+                        <a href="" class="detail">Выбрать номер</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="bron_cart">
+                <div class="img-container">
+                    <img src="media/8.jpeg" class="img-cart" alt="Отель">
+                </div>
+                <div class="info_bron">
+                    <h5>Отель "Название"</h5>
+                    <p> Франция, Париж</p>
+                    <p>Адрес(ул, дом, Париж)</p>
+                    <p>Удаленность: 10км</p>
+                    <p>4.5</p>
+                    <p>+79027460948</p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Odio est soluta architecto eaque, dolores quod impedit provident saepe placeat.
+                    </p>
+                    <p class="price">За ночь 10500p</p>
+                    <div class="btn_brone">
+                        <a href="" class="detail">Выбрать номер</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="bron_cart">
+                <div class="img-container">
+                    <img src="media/8.jpeg" class="img-cart" alt="Отель">
+                </div>
+                <div class="info_bron">
+                    <h5>Отель "Название"</h5>
+                    <p> Франция, Париж</p>
+                    <p>Адрес(ул, дом, Париж)</p>
+                    <p>Удаленность: 10км</p>
+                    <p>4.5</p>
+                    <p>+79027460948</p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Odio est soluta architecto eaque, dolores quod impedit provident saepe placeat.
+                    </p>
+                    <p class="price">За ночь 10500p</p>
+                    <div class="btn_brone">
+                        <a href="" class="detail">Выбрать номер</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="bron_cart">
+                <div class="img-container">
+                    <img src="media/8.jpeg" class="img-cart" alt="Отель">
+                </div>
+                <div class="info_bron">
+                    <h5>Отель "Название"</h5>
+                    <p> Франция, Париж</p>
+                    <p>Адрес(ул, дом, Париж)</p>
+                    <p>Удаленность: 10км</p>
+                    <p>4.5</p>
+                    <p>+79027460948</p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Odio est soluta architecto eaque, dolores quod impedit provident saepe placeat.
+                    </p>
+                    <p class="price">За ночь 10500p</p>
+                    <div class="btn_brone">
+                        <a href="" class="detail">Выбрать номер</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="bron_cart">
+                <div class="img-container">
+                    <img src="media/8.jpeg" class="img-cart" alt="Отель">
+                </div>
+                <div class="info_bron">
+                    <h5>Отель "Название"</h5>
+                    <p> Франция, Париж</p>
+                    <p>Адрес(ул, дом, Париж)</p>
+                    <p>Удаленность: 10км</p>
+                    <p>4.5</p>
+                    <p>+79027460948</p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Odio est soluta architecto eaque, dolores quod impedit provident saepe placeat.
+                    </p>
+                    <p class="price">За ночь 10500p</p>
+                    <div class="btn_brone">
+                        <a href="" class="detail">Выбрать номер</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="bron_cart">
+                <div class="img-container">
+                    <img src="media/8.jpeg" class="img-cart" alt="Отель">
+                </div>
+                <div class="info_bron">
+                    <h5>Отель "Название"</h5>
+                    <p> Франция, Париж</p>
+                    <p>Адрес(ул, дом, Париж)</p>
+                    <p>Удаленность: 10км</p>
+                    <p>4.5</p>
+                    <p>+79027460948</p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Odio est soluta architecto eaque, dolores quod impedit provident saepe placeat.
+                    </p>
+                    <p class="price">За ночь 10500p</p>
+                    <div class="btn_brone">
+                        <a href="" class="detail">Выбрать номер</a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="hosts-container">
-            <div class="hosts-carts">
-                <div class="bron_cart">
-                    <div class="img-container">
-                        <img src="media/8.jpeg" class="img-cart" alt="Отель">
-                    </div>
-                    <div class="info_bron">
-                        <h5>Отель "Название"</h5>
-                        <p> Франция, Париж</p>
-                        <p>Адрес(ул, дом, Париж)</p>
-                        <p>Удаленность: 10км</p>
-                        <p>4.5</p>
-                        <p>+79027460948</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Odio est soluta architecto eaque, dolores quod impedit provident saepe placeat.
-                        </p>
-                        <p class="price">За ночь 10500p</p>
-                        <div class="btn_brone">
-                            <a href="" class="detail">Выбрать номер</a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="bron_cart">
-                    <div class="img-container">
-                        <img src="media/8.jpeg" class="img-cart" alt="Отель">
-                    </div>
-                    <div class="info_bron">
-                        <h5>Отель "Название"</h5>
-                        <p> Франция, Париж</p>
-                        <p>Адрес(ул, дом, Париж)</p>
-                        <p>Удаленность: 10км</p>
-                        <p>4.5</p>
-                        <p>+79027460948</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Odio est soluta architecto eaque, dolores quod impedit provident saepe placeat.
-                        </p>
-                        <p class="price">За ночь 10500p</p>
-                        <div class="btn_brone">
-                            <a href="" class="detail">Выбрать номер</a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="bron_cart">
-                    <div class="img-container">
-                        <img src="media/8.jpeg" class="img-cart" alt="Отель">
-                    </div>
-                    <div class="info_bron">
-                        <h5>Отель "Название"</h5>
-                        <p> Франция, Париж</p>
-                        <p>Адрес(ул, дом, Париж)</p>
-                        <p>Удаленность: 10км</p>
-                        <p>4.5</p>
-                        <p>+79027460948</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Odio est soluta architecto eaque, dolores quod impedit provident saepe placeat.
-                        </p>
-                        <p class="price">За ночь 10500p</p>
-                        <div class="btn_brone">
-                            <a href="" class="detail">Выбрать номер</a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="bron_cart">
-                    <div class="img-container">
-                        <img src="media/8.jpeg" class="img-cart" alt="Отель">
-                    </div>
-                    <div class="info_bron">
-                        <h5>Отель "Название"</h5>
-                        <p> Франция, Париж</p>
-                        <p>Адрес(ул, дом, Париж)</p>
-                        <p>Удаленность: 10км</p>
-                        <p>4.5</p>
-                        <p>+79027460948</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Odio est soluta architecto eaque, dolores quod impedit provident saepe placeat.
-                        </p>
-                        <p class="price">За ночь 10500p</p>
-                        <div class="btn_brone">
-                            <a href="" class="detail">Выбрать номер</a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="bron_cart">
-                    <div class="img-container">
-                        <img src="media/8.jpeg" class="img-cart" alt="Отель">
-                    </div>
-                    <div class="info_bron">
-                        <h5>Отель "Название"</h5>
-                        <p> Франция, Париж</p>
-                        <p>Адрес(ул, дом, Париж)</p>
-                        <p>Удаленность: 10км</p>
-                        <p>4.5</p>
-                        <p>+79027460948</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Odio est soluta architecto eaque, dolores quod impedit provident saepe placeat.
-                        </p>
-                        <p class="price">За ночь 10500p</p>
-                        <div class="btn_brone">
-                            <a href="" class="detail">Выбрать номер</a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="bron_cart">
-                    <div class="img-container">
-                        <img src="media/8.jpeg" class="img-cart" alt="Отель">
-                    </div>
-                    <div class="info_bron">
-                        <h5>Отель "Название"</h5>
-                        <p> Франция, Париж</p>
-                        <p>Адрес(ул, дом, Париж)</p>
-                        <p>Удаленность: 10км</p>
-                        <p>4.5</p>
-                        <p>+79027460948</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Odio est soluta architecto eaque, dolores quod impedit provident saepe placeat.
-                        </p>
-                        <p class="price">За ночь 10500p</p>
-                        <div class="btn_brone">
-                            <a href="" class="detail">Выбрать номер</a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="bron_cart">
-                    <div class="img-container">
-                        <img src="media/8.jpeg" class="img-cart" alt="Отель">
-                    </div>
-                    <div class="info_bron">
-                        <h5>Отель "Название"</h5>
-                        <p> Франция, Париж</p>
-                        <p>Адрес(ул, дом, Париж)</p>
-                        <p>Удаленность: 10км</p>
-                        <p>4.5</p>
-                        <p>+79027460948</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Odio est soluta architecto eaque, dolores quod impedit provident saepe placeat.
-                        </p>
-                        <p class="price">За ночь 10500p</p>
-                        <div class="btn_brone">
-                            <a href="" class="detail">Выбрать номер</a>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div class="pag">
-            <p  class="num"><</p>
-            <p class="num active">1</p>
-            <p class="num">2</p>
-            <p class="num">3</p>
-            <p class="num">4</p>
-            <p class="num">5</p>
-            <p class="num">6</p>
-            <p class="num">7</p>
-            <p class="num">8</p>
-            <p class="num">9</p>
-            <p class="num">10</p>
-            <p  class="num">></p>
+            <p class="num">
+                << /p>
+                    <p class="num active">1</p>
+                    <p class="num">2</p>
+                    <p class="num">3</p>
+                    <p class="num">4</p>
+                    <p class="num">5</p>
+                    <p class="num">6</p>
+                    <p class="num">7</p>
+                    <p class="num">8</p>
+                    <p class="num">9</p>
+                    <p class="num">10</p>
+                    <p class="num">></p>
         </div>
-
-          <footer>
-            <div class="footer-container">
-                <div class="block-footer contact">
-                    <p>Контакты</p>
-                    <p>(8-800-777-55-77)</p>
-                    <p>hotel@hotel.ru</p>
-                </div>
-                <div class="block-footer">
-                    <a href="index.html">Главная</a>
-                    <a href="reg.html">Регистрация</a>
-                    <a href="auth.html">Авторизация</a>
-                    <a href="account.html">Личный кабинет</a>
-                    <a href="">Поиск</a>
-                    <a href="">Задать вопрос</a>
-                </div>
-                <div class="block-footer">
-                    <a href="">Партнерам</a>
-                    <a href="">Клиентам</a>
-                    <a href="">О нас</a>
-                </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="block-footer contact">
+                <p>Контакты</p>
+                <p>(8-800-777-55-77)</p>
+                <p>hotel@hotel.ru</p>
             </div>
-        </footer>
-    </div>
+            <div class="block-footer">
+                <a href="index.html">Главная</a>
+                <a href="reg.html">Регистрация</a>
+                <a href="auth.html">Авторизация</a>
+                <a href="account.html">Личный кабинет</a>
+                <a href="">Поиск</a>
+                <a href="">Задать вопрос</a>
+            </div>
+            <div class="block-footer">
+                <a href="">Партнерам</a>
+                <a href="">Клиентам</a>
+                <a href="">О нас</a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 

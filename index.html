@@ -9,185 +9,171 @@
 </head>
 
 <body>
-    <div class="main-container">
+    <main>
         <nav>
-            <div class="nav_container">
-                <div class="logo_container">
-                    <h1><a href="index.html"><img src="media/logo.png" alt=""></a></h1>
-                </div>
-                <div class="nav_links">
-                    <a href="" class="nav-link">Поиск</a>
-                    <a href="" class="nav-link">Задать вопрос</a>
-                    <a href="" class="nav-link">Уведомления</a>
-                    <a href="" class="nav-link">Телефон</a>
-                    <a href="" class="nav-link">Мои заказы</a>
-                    <a href="" class="nav-link">Бронирование</a>
-                    <a href="" class="nav-link">Избранное</a>
-                    <a href="account.html" class="nav-link">Кабинет</a>
-                </div>
-                <a href="auth.html" class="btn-reg">Вход / Регистрация</a>
-            </div>
+            <a href="index.html" class="logo"><img src="media/logo.png" alt=""></a>
+            <ul class="nav_links">
+                <li><a href="" class="nav-link">Поиск</a></li>
+                <li><a href="" class="nav-link">Задать вопрос</a></li>
+                <li><a href="" class="nav-link">Уведомления</a></li>
+                <li><a href="" class="nav-link">Телефон</a></li>
+                <li><a href="" class="nav-link">Мои заказы</a></li>
+                <li><a href="" class="nav-link">Бронирование</a></li>
+                <a href="" class="nav-link">Избранное</a>
+                <a href="account.html" class="nav-link">Кабинет</a>
+            </ul>
+            <a href="auth.html" class="btn-reg">Вход / Регистрация</a>
         </nav>
-        <div class="search-container">
-            <form action="" class="search-form-global">
+        <div class="search-top">
+            <form action="" method="get" class="search-form-global">
                 <input type="search" class="search-glodal" placeholder="Поиск..">
                 <button type="submit" class="btn-search-global">Найти</button>
             </form>
         </div>
-        <div class="slider-container">
-            <div class="slider-content">
-                <div class="slider-btn left">&#10094;</div>
-                <div class="img-container-slider">
-                    <img src="media/5.jpeg" class="slider-img" alt="отель">
-                </div>
-                <div class="text-slider">
-                    <h1 class="h1-txt-slider">Отель "Название"</h1>
-                    <p class="p-txt-slider">Россия, Москва</p>
-                    <p class="discr-txt-slider">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>
-                        Porro aspernatur eos culpa repellendus consequatur <br>alias reiciendis tempora quos explicabo
-                        sit.
-                    </p>
-                    <a href="detail.html" class="btn-slider">Подробнее</a>
-                </div>
-                <div class="slider-btn right">&#10095;</div>
-                <div class="slider-indications">
-                    <span class="dot active"></span>
-                    <span class="dot"></span>
-                </div>
 
+        <div class="slider">
+            <div class="slider-btn left">&#10094;</div>
+            <div class="img-container-slider">
+                <img src="media/5.jpeg" class="slider-img" alt="отель">
             </div>
+            <div class="text-slider">
+                <h1 class="h1-txt-slider">Отель "Название"</h1>
+                <p class="p-txt-slider">Россия, Москва</p>
+                <p class="discr-txt-slider">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>
+                    Porro aspernatur eos culpa repellendus consequatur <br>alias reiciendis tempora quos explicabo
+                    sit.
+                </p>
+                <a href="detail.html" class="btn-slider">Подробнее</a>
+            </div>
+            <div class="slider-btn right">&#10095;</div>
         </div>
+
 
         <div class="about-us">
-            <div class="about-content">
-                <div class="p-searchs">
-                    <div class="p-search">
-                        <p>Низкие цены</p>
-                    </div>
+            <div class="p-search">
+                <p>Отели по всему миру</p>
+            </div>
+            <div class="p-search">
+                <p>Низкие цены</p>
+            </div>
 
-                    <div class="p-search">
-                        <p>Отели по всему миру</p>
-                    </div>
-
-                    <div class="p-search ">
-                        <p class="help">Заботливая поддержка 24/7 </p>
-                    </div>
-                </div>
+            <div class="p-search ">
+                <p class="help">Заботливая поддержка 24/7 </p>
             </div>
         </div>
 
-  <div class="search">
-            <div class="search-content">
-                <h2>Найдём, где остановиться!</h2>
-                <p>Квартиры, отели, гостевые дома — 390 тысяч вариантов для поездок по России и зарубежью</p>
-                <div class="search-filter">
-                    <input type="text" class="input-search-filter city" placeholder="Страна,Город">
-                    <div class="input-group">
-                        <label for="checkin">Дата заезда</label>
-                        <input type="date" id="checkin" class="input-search-filter">
-                    </div>
+        <div class="search">
+       
+            <h2>Найдём, где остановиться!</h2>
+            <p>Квартиры, отели, гостевые дома — 390 тысяч вариантов для поездок по России и зарубежью</p>
+            <div class="search-filter">
+                <input type="text" class="input-search-filter city" placeholder="Страна,Город">
+                <div class="input-group">
+                    <label for="checkin">Дата заезда</label>
+                    <input type="date" id="checkin" class="input-search-filter">
+                </div>
 
-                    <div class="input-group">
-                        <label for="checkout">Дата выезда</label>
-                        <input type="date" id="checkout" class="input-search-filter">
+                <div class="input-group">
+                    <label for="checkout">Дата выезда</label>
+                    <input type="date" id="checkout" class="input-search-filter">
+                </div>
+                <input type="number" max="10" min="1" class="input-search-filter guest" placeholder="Гости">
+                <a href="search.html" class="btn-search-global a">Найти</a>
+            </div>
+    
+        </div>
+
+        <div class="hosts-carts">
+            <div class="bron_cart">
+                <div class="img-container">
+                    <img src="media/8.jpeg" class="img-cart" alt="Отель">
+                </div>
+                <div class="info_bron">
+                    <h5>Отель "Название"</h5>
+                    <p> Франция, Париж</p>
+                    <p class="price">50500p</p>
+                    <div class="btn_brone">
+                        <a href="" class="detail">Подробнее</a>
+                        <a href="" class="brone">Забронировать</a>
                     </div>
-                    <input type="number" max="10" min="1" class="input-search-filter guest" placeholder="Гости">
-                    <button type="submit" class="btn-search-global filter-btn"><a href="search.html">Найти</a></button>
                 </div>
             </div>
-        </div>
-        <div class="hosts-container">
-            <div class="hosts-carts">
-                <div class="bron_cart">
-                    <div class="img-container">
-                        <img src="media/8.jpeg" class="img-cart" alt="Отель">
-                    </div>
-                    <div class="info_bron">
-                        <h5>Отель "Название"</h5>
-                        <p> Франция, Париж</p>
-                        <p class="price">50500p</p>
-                        <div class="btn_brone">
-                            <a href="" class="detail">Подробнее</a>
-                            <a href="" class="brone">Забронировать</a>
-                        </div>
+            <div class="bron_cart">
+                <div class="img-container">
+                    <img src="media/8.jpeg" class="img-cart" alt="Отель">
+                </div>
+                <div class="info_bron">
+                    <h5>Отель "Название"</h5>
+                    <p> Франция, Париж</p>
+                    <p class="price">50500p</p>
+                    <div class="btn_brone">
+                        <a href="" class="detail">Подробнее</a>
+                        <a href="" class="brone">Забронировать</a>
                     </div>
                 </div>
-                <div class="bron_cart">
-                    <div class="img-container">
-                        <img src="media/8.jpeg" class="img-cart" alt="Отель">
-                    </div>
-                    <div class="info_bron">
-                        <h5>Отель "Название"</h5>
-                        <p> Франция, Париж</p>
-                        <p class="price">50500p</p>
-                        <div class="btn_brone">
-                            <a href="" class="detail">Подробнее</a>
-                            <a href="" class="brone">Забронировать</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="bron_cart">
-                    <div class="img-container">
-                        <img src="media/8.jpeg" class="img-cart" alt="Отель">
-                    </div>
-                    <div class="info_bron">
-                        <h5>Отель "Название"</h5>
-                        <p> Франция, Париж</p>
-                        <p class="price">50500p</p>
-                        <div class="btn_brone">
-                            <a href="" class="detail">Подробнее</a>
-                            <a href="" class="brone">Забронировать</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="bron_cart">
-                    <div class="img-container">
-                        <img src="media/8.jpeg" class="img-cart" alt="Отель">
-                    </div>
-                    <div class="info_bron">
-                        <h5>Отель "Название"</h5>
-                        <p> Франция, Париж</p>
-                        <p class="price">50500p</p>
-                        <div class="btn_brone">
-                            <a href="" class="detail">Подробнее</a>
-                            <a href="" class="brone">Забронировать</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="bron_cart">
-                    <div class="img-container">
-                        <img src="media/8.jpeg" class="img-cart" alt="Отель">
-                    </div>
-                    <div class="info_bron">
-                        <h5>Отель "Название"</h5>
-                        <p> Франция, Париж</p>
-                        <p class="price">50500p</p>
-                        <div class="btn_brone">
-                            <a href="" class="detail">Подробнее</a>
-                            <a href="" class="brone">Забронировать</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="bron_cart">
-                    <div class="img-container">
-                        <img src="media/8.jpeg" class="img-cart" alt="Отель">
-                    </div>
-                    <div class="info_bron">
-                        <h5>Отель "Название"</h5>
-                        <p> Франция, Париж</p>
-                        <p class="price">50500p</p>
-                        <div class="btn_brone">
-                            <a href="" class="detail">Подробнее</a>
-                            <a href="" class="brone">Забронировать</a>
-                        </div>
-                    </div>
-                </div>
-
-
             </div>
+            <div class="bron_cart">
+                <div class="img-container">
+                    <img src="media/8.jpeg" class="img-cart" alt="Отель">
+                </div>
+                <div class="info_bron">
+                    <h5>Отель "Название"</h5>
+                    <p> Франция, Париж</p>
+                    <p class="price">50500p</p>
+                    <div class="btn_brone">
+                        <a href="" class="detail">Подробнее</a>
+                        <a href="" class="brone">Забронировать</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bron_cart">
+                <div class="img-container">
+                    <img src="media/8.jpeg" class="img-cart" alt="Отель">
+                </div>
+                <div class="info_bron">
+                    <h5>Отель "Название"</h5>
+                    <p> Франция, Париж</p>
+                    <p class="price">50500p</p>
+                    <div class="btn_brone">
+                        <a href="" class="detail">Подробнее</a>
+                        <a href="" class="brone">Забронировать</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bron_cart">
+                <div class="img-container">
+                    <img src="media/8.jpeg" class="img-cart" alt="Отель">
+                </div>
+                <div class="info_bron">
+                    <h5>Отель "Название"</h5>
+                    <p> Франция, Париж</p>
+                    <p class="price">50500p</p>
+                    <div class="btn_brone">
+                        <a href="" class="detail">Подробнее</a>
+                        <a href="" class="brone">Забронировать</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bron_cart">
+                <div class="img-container">
+                    <img src="media/8.jpeg" class="img-cart" alt="Отель">
+                </div>
+                <div class="info_bron">
+                    <h5>Отель "Название"</h5>
+                    <p> Франция, Париж</p>
+                    <p class="price">50500p</p>
+                    <div class="btn_brone">
+                        <a href="" class="detail">Подробнее</a>
+                        <a href="" class="brone">Забронировать</a>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
-      
+
+
         <div class="sub-form">
             <div class="sub-content">
                 <h2>Хотите бронироовать дешевле?</h2>
@@ -199,33 +185,33 @@
 
                 <div class="checkbox-sub">
                     <input type="checkbox">
-                    <p >Согласие на обработку персональных данных</p>
+                    <p>Согласие на обработку персональных данных</p>
                 </div>
             </div>
         </div>
-        <footer>
-            <div class="footer-container">
-                <div class="block-footer contact">
-                    <p>Контакты</p>
-                    <p>(8-800-777-55-77)</p>
-                    <p>hotel@hotel.ru</p>
-                </div>
-                <div class="block-footer">
-                    <a href="index.html">Главная</a>
-                    <a href="reg.html">Регистрация</a>
-                    <a href="auth.html">Авторизация</a>
-                    <a href="account.html">Личный кабинет</a>
-                    <a href="">Поиск</a>
-                    <a href="">Задать вопрос</a>
-                </div>
-                <div class="block-footer">
-                    <a href="">Партнерам</a>
-                    <a href="">Клиентам</a>
-                    <a href="">О нас</a>
-                </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="block-footer contact">
+                <p>Контакты</p>
+                <p>(8-800-777-55-77)</p>
+                <p>hotel@hotel.ru</p>
             </div>
-        </footer>
-    </div>
+            <div class="block-footer">
+                <a href="index.html">Главная</a>
+                <a href="reg.html">Регистрация</a>
+                <a href="auth.html">Авторизация</a>
+                <a href="account.html">Личный кабинет</a>
+                <a href="">Поиск</a>
+                <a href="">Задать вопрос</a>
+            </div>
+            <div class="block-footer">
+                <a href="">Партнерам</a>
+                <a href="">Клиентам</a>
+                <a href="">О нас</a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

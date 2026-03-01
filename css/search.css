@@ -9,12 +9,12 @@ a {
   color: black;
 }
 
-.main_container {
+main {
   max-width: 1200px;
   margin: auto;
 }
 
-.nav_container {
+nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -25,10 +25,9 @@ a {
   list-style: none;
   padding: 0;
   gap: 10px;
-
 }
 
-.btn-search-global.filter-btn a{
+.btn-search-global.filter-btn a {
   color: #365dd1;
 }
 
@@ -53,54 +52,20 @@ a {
   background-color: rgb(81, 122, 255);
 }
 
-
-.p-searchs {
-  display: flex;
-  flex-direction: row;
-  gap: 80px;
-  justify-content: center;
-}
-
-.p-search {
-  display: flex;
-  font-size: 25px;
-  width: 300px;
-  height: 150px;
-  border-radius: 10px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  color: rgb(41, 41, 41);
-  transition: 0.3s ease-in-out;
-}
-
-.p-search:hover {
-  transform: translateY(-5%);
-}
-
 .search {
   display: flex;
-  justify-content: center;
   margin-top: 50px;
-}
-
-.search-content {
-  display: flex;
-  justify-content: center;
-  max-width: 1100px;
-  width: 100%;
   flex-direction: column;
   text-align: center;
-  margin-top: 40px;
 }
 
-.search-content h2 {
+.search h2 {
   font-size: 40px;
   margin: 0;
   color: rgb(41, 41, 41);
 }
 
-.search-content p {
+.search p {
   font-size: 20px;
   margin: 20px 0 50px 0;
   color: rgb(41, 41, 41);
@@ -111,12 +76,11 @@ a {
   flex-direction: row;
   justify-content: center;
   gap: 5px;
-  max-width: 1100px;
   align-items: flex-end;
 }
 
 .input-search-filter {
-  height: 50px;
+  min-height: 50px;
   border: none;
   background-color: rgb(240, 240, 240);
   padding: 0 0 0 10px;
@@ -133,7 +97,8 @@ a {
 
 .input-search-filter.city {
   border-radius: 10px 0 0 10px;
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
 }
 
 .input-search-filter.guest {
@@ -155,10 +120,9 @@ a {
   color: #555;
 }
 
-.btn-search-global.filter-btn {
-  height: 50px;
+.btn-search-global.a {
+  padding: 12.5px 10px;
 }
-
 
 .btn-search-global {
   border: 3px solid rgb(81, 122, 255);
@@ -185,23 +149,21 @@ a {
     0px 0px 10px rgba(81, 122, 255, 0.329);
 }
 
-.hosts-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
+.a-serch-filt {
+  color: #517aff;
 }
 
 .hosts-carts {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
-  row-gap: 20px;
-  max-width: 1100px;
+  gap: 20px;
   width: 100%;
+  margin-top: 50px;
 }
 
 .bron_cart {
-  width: 300px;
+  max-width: 300px;
   min-height: 350px;
   border-radius: 20px;
   background-color: rgb(240, 240, 240);
@@ -275,35 +237,37 @@ a {
   border-radius: 10px;
 }
 
-.pag{
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    color: #365dd1;
+.pag {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  color: #365dd1;
 }
 
-.num{
-    padding: 5px;
-    background-color: #e5f4f8;
+.num {
+  padding: 5px;
+  background-color: #e5f4f8;
 }
 
-.active{
-    background-color: #365dd1;
-    color: white;
+.active {
+  background-color: #365dd1;
+  color: white;
 }
-
 
 footer {
   margin-top: 70px;
   background: rgb(233, 233, 233);
-  padding: 40px 0;
-}
-
-.footer-container {
+  padding: 40px 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+}
+.container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
   text-align: start;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .block-footer {
@@ -325,4 +289,82 @@ footer {
 .block-footer.contact p {
   margin: 0 0 10px 0;
   color: rgb(41, 41, 41);
+}
+
+@media (max-width: 768px) {
+  main {
+    max-width: 768px;
+  }
+
+  .nav_links a {
+    font-size: 12px;
+  }
+
+
+
+  .btn-reg {
+    border: 2px solid rgb(41, 41, 41);
+    border-radius: 10px;
+    padding: 5px 5px;
+    font-weight: 600;
+    font-size: 12px;
+    width: 130px;
+    margin-right: 10px;
+  }
+
+
+  .search-form-global {
+    max-width: 700px;
+  }
+
+  .p-search p {
+    font-size: 18px;
+  }
+
+  .p-search {
+    max-width: 200px;
+    max-height: 50px;
+  }
+
+  .help {
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .search h2 {
+    font-size: 34px;
+  }
+
+  .search p {
+    font-size: 18px;
+  }
+
+  .search-filter {
+    max-width: 800px;
+    margin-left: 5px;
+  }
+  .input-search-filter {
+    width: 100px;
+  }
+  .input-search-filter.city {
+    width: 250px;
+  }
+  .btn-search-global.filter-btn {
+    width: 100px;
+  }
+
+  .bron_cart {
+    max-width: 250px;
+  }
+  .btn_brone a {
+    padding: 5px 15px;
+    font-size: 12px;
+  }
+  .hosts-carts {
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    row-gap: 30px;
+    max-width: 768px;
+    width: 100%;
+  }
 }

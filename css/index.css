@@ -9,24 +9,22 @@ a {
   color: black;
 }
 
-.main_container {
+main {
   max-width: 1200px;
   margin: auto;
 }
 
-.nav_container {
+nav {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  gap: 50px;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .nav_links {
   display: flex;
-  flex-direction: row;
-  gap: 20px;
-  align-items: center;
+  list-style: none;
+  padding: 0;
+  gap: 10px;
 }
 
 .nav-link:hover {
@@ -52,16 +50,12 @@ a {
 
 /* Слайдер */
 
-.slider-container {
-  display: flex;
-  justify-content: center;
-}
 
-.slider-content {
+.slider {
   position: relative;
   display: flex;
   flex-direction: column;
-  max-width: 1100px;
+
   width: 100%;
 }
 
@@ -105,7 +99,6 @@ a {
   color: rgb(226, 226, 226);
   margin-bottom: 40px;
 }
-
 
 .btn-slider {
   border: 3px solid rgb(81, 122, 255);
@@ -178,11 +171,8 @@ a {
 }
 
 /* Строка поиска */
-
-.search-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
+.search-top{
+  margin: 20px 0;
 }
 
 .search-glodal {
@@ -194,6 +184,7 @@ a {
   width: 100%;
   transition: 0.3s ease;
   color: rgba(46, 46, 46, 0.755);
+  
 }
 
 .search-glodal:focus {
@@ -208,8 +199,6 @@ a {
 .search-form-global {
   display: flex;
   justify-content: center;
-  max-width: 1100px;
-  width: 100%;
   gap: 10px;
 }
 
@@ -242,26 +231,20 @@ a {
 
 .about-us {
   display: flex;
-  justify-content: center;
-  margin-top: 50px;
+  justify-content: space-between;
+  margin: 70px auto;
 }
 
-.p-searchs {
-  display: flex;
-  flex-direction: row;
-  gap: 80px;
-  justify-content: center;
+.help {
+  margin: 0;
+  margin-top: 30px;
 }
 
 .p-search {
-  display: flex;
   font-size: 25px;
-  width: 300px;
-  height: 150px;
+  max-width: 300px;
   border-radius: 10px;
   text-align: center;
-  justify-content: center;
-  align-items: center;
   color: rgb(41, 41, 41);
   transition: 0.3s ease-in-out;
 }
@@ -272,24 +255,19 @@ a {
 
 /* Карты броней */
 
-.hosts-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
 
 .hosts-carts {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
-  row-gap: 20px;
-  max-width: 1100px;
+  gap: 20px;
   width: 100%;
+  margin-top: 50px;
 }
 
 .bron_cart {
-  width: 300px;
-  height: 350px;
+  max-width: 300px;
+  min-height: 350px;
   border-radius: 20px;
   background-color: rgb(240, 240, 240);
   display: flex;
@@ -366,27 +344,18 @@ a {
 
 .search {
   display: flex;
-  justify-content: center;
   margin-top: 50px;
-}
-
-.search-content {
-  display: flex;
-  justify-content: center;
-  max-width: 1100px;
-  width: 100%;
   flex-direction: column;
   text-align: center;
-  margin-top: 40px;
 }
 
-.search-content h2 {
+.search h2 {
   font-size: 40px;
   margin: 0;
   color: rgb(41, 41, 41);
 }
 
-.search-content p {
+.search p {
   font-size: 20px;
   margin: 20px 0 50px 0;
   color: rgb(41, 41, 41);
@@ -397,12 +366,11 @@ a {
   flex-direction: row;
   justify-content: center;
   gap: 5px;
-  max-width: 1100px;
   align-items: flex-end;
 }
 
 .input-search-filter {
-  height: 50px;
+  min-height: 50px;
   border: none;
   background-color: rgb(240, 240, 240);
   padding: 0 0 0 10px;
@@ -419,7 +387,8 @@ a {
 
 .input-search-filter.city {
   border-radius: 10px 0 0 10px;
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
 }
 
 .input-search-filter.guest {
@@ -441,11 +410,15 @@ a {
   color: #555;
 }
 
-.btn-search-global.filter-btn {
-  height: 50px;
+.btn-search-global.a {
+  padding: 12.5px 10px;
 }
 
-/* форма пописки */
+.a-serch-filt {
+  color: #517aff;
+}
+
+/* форма подписки */
 
 .sub-form {
   display: flex;
@@ -454,6 +427,7 @@ a {
 }
 
 .sub-content {
+  
   text-align: center;
   max-width: 1100px;
   padding: 40px;
@@ -531,14 +505,17 @@ a {
 footer {
   margin-top: 70px;
   background: rgb(233, 233, 233);
-  padding: 40px 0;
-}
-
-.footer-container {
+  padding: 40px 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+}
+.container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
   text-align: start;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .block-footer {
@@ -562,9 +539,8 @@ footer {
   color: rgb(41, 41, 41);
 }
 
-
 @media (max-width: 768px) {
-  .main_container {
+  main {
     max-width: 768px;
   }
 
@@ -575,9 +551,6 @@ footer {
     gap: 5px;
   }
 
-  /* .nav_container {
-    gap: 10px;
-  } */
 
   .btn-reg {
     border: 2px solid rgb(41, 41, 41);
@@ -589,7 +562,7 @@ footer {
     margin-right: 10px;
   }
 
-  .logo_container img {
+  .logo img {
     width: 50px;
   }
 
@@ -604,10 +577,6 @@ footer {
   .p-search {
     width: 200px;
     height: 50px;
-  }
-
-  .p-searchs {
-    gap: 10px;
   }
 
   .help {
@@ -628,17 +597,17 @@ footer {
     margin-left: 30px;
   }
   .input-search-filter {
-    width: 100px;
+    max-width: 100px;
   }
   .input-search-filter.city {
-    width: 250px;
+    max-width: 250px;
   }
   .btn-search-global.filter-btn {
-    width: 100px;
+    max-width: 100px;
   }
 
   .bron_cart {
-    width: 250px;
+    max-width: 250px;
   }
   .btn_brone a {
     padding: 5px 15px;
